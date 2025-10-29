@@ -17,11 +17,11 @@ It serves as the interface for administrators, faculty, and students to access v
 
 ---
 
-<!-- ## ⚙️ Getting Started
+## ⚙️ Getting Started
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/<your-username>/college-erp-frontend.git
+git clone git@github.com:LaveshPurswani/college-erp-frontend.git
 cd college-erp-frontend
 ```
 
@@ -38,7 +38,7 @@ npm run dev
 Your app will be running on  
 👉 http://localhost:3000
 
---- -->
+---
 
 ## 🗂️ Project Folder Structure
 
