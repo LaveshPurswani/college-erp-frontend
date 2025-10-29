@@ -1,36 +1,128 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎓 College ERP SaaS – Frontend
 
-## Getting Started
+This is the **College ERP SaaS Frontend Cobebase** which is a scalable, modular, and responsive web application built using **Next.js (App Router)**.  
+It serves as the interface for administrators, faculty, and students to access various ERP modules like authentication, dashboards, course management, and communication systems.
 
-First, run the development server:
+---
 
+## 🚀 Tech Stack
+
+- **Framework:** Next.js (v16)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **State Management:** React Context API or Redux Toolkit
+- **Auth & Data:** JWT + Bycrpt 
+- **Linting:** ESLint + Prettier
+- **Package Manager:** npm
+
+---
+
+<!-- ## ⚙️ Getting Started
+
+### 1️⃣ Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/<your-username>/college-erp-frontend.git
+cd college-erp-frontend
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2️⃣ Install dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3️⃣ Run the development server
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Your app will be running on  
+👉 http://localhost:3000
 
-## Learn More
+--- -->
 
-To learn more about Next.js, take a look at the following resources:
+## 🗂️ Project Folder Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Below is the proposed **scalable folder structure** for reference and future development.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+src/
+├── app/                     # Next.js App Router pages
+│   ├── layout.tsx           # Root layout
+│   ├── page.tsx             # Landing page
+│   ├── (auth)/              # Auth routes grouping
+│   │   ├── login/
+│   │   │   └── page.tsx
+│   │   └── signup/
+│   │       └── page.tsx
+│   ├── dashboard/           # Main ERP dashboard
+│   │   └── page.tsx
+│   └── not-found.tsx
+│
+├── components/              # Shared React components
+│   ├── ui/                  # Reusable UI elements (buttons, modals, etc.)
+│   ├── layout/              # Navbars, sidebars, etc.
+│   └── forms/               # Auth forms, etc.
+│
+├── context/                 # React Contexts or Redux (Auth, GlobalProvider)
+│   └── AuthContext.tsx
+│
+├── lib/                     # Utility functions & configs
+│   ├── api.ts               # API endpoints, axios setup
+│   ├── constants.ts         # Static constants
+│   ├── helpers.ts           # Helper functions
+│   └── appwrite.ts          # Appwrite SDK config (later)
+│
+├── hooks/                   # Custom hooks (useAuth, useFetch, etc.)
+│
+├── styles/                  # Global and component-specific styles
+│   └── globals.css
+│
+└── types/                   # TypeScript types/interfaces
+    ├── user.ts
+    └── index.ts
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🧩 Git & Branching Workflow
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project follows a **clean Git branching model** to ensure stable deployments and organized feature development.
+
+```
+main        → Production-ready code
+dev         → Active development branch
+feature/*   → Individual features (merged into dev)
+```
+
+<!-- ### Initial Setup
+```bash
+git init
+git add .
+git commit -m "Initial Next.js frontend setup"
+git branch -M dev
+git remote add origin https://github.com/<your-username>/college-erp-frontend.git
+git push -u origin dev
+``` -->
+
+<!-- ---
+
+## 🧠 Future Plans
+
+- Integrate Appwrite for Authentication & Database
+- Add Super Admin Login and Protected Routes
+- Create Global Context Provider for State Management
+- Implement Reusable UI Components (Sidebar, Navbar, Modal)
+- Add CI/CD pipeline for automated builds & deploys -->
+
+---
+
+<!-- ## 📄 License
+This project is licensed under the **MIT License**.  
+Feel free to modify and extend for educational or organizational use.
+
+--- -->
+
+## 👨‍💻 Author
+**Lavesh Purswani**  
+MERN / Full Stack Developer  
+<!-- 📧 <your-email> | 🌐 [GitHub](https://github.com/<your-username>) -->
